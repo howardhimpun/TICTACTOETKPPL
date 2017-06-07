@@ -8,7 +8,7 @@ html
   body
     
     article
-      section
+      section.s1
         .slide1
             marquee.sym(direction='down' width='100%' height='100%' behavior='alternate')
                 marquee.w1(direction='right' scrollamount='100' behavior='alternate')
@@ -44,10 +44,22 @@ html
               a.tmbl3(href='#')
                 h Option
                         
-      section
-        .slide2
-          
-      section
-        
+      section.s2
+
+        section.s3
+         .slide3
+           ul
+            li.judul1 Tic Tac Toe
+            br
+            br
+            li
+              i  Tic Tac Toe
+              is a simple game which, if played optimally by both players, will always result in a tie. However, many players (especially younger children) still enjoy it, and Tic Tac Toe can be made significantly more complex by increasing the size of the board.
+              br
+            li
+              a.arr1(href='#1')
+                img(src='images/arrow2.png' title='Back to Menu')
+              a.arr2(href='#4')
+                img(src='images/arrow.png' title='Next')
     script(src='build/build.js')
     script(src='build/tic.js')

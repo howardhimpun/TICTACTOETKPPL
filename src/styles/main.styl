@@ -1,43 +1,29 @@
-// New to Stylus? Check out http://learnboost.github.io/stylus
-// Use modern CSS thanks to Autoprefixer: https://github.com/ai/autoprefixer
-
-// Import CSS from "node_modules" and "bower_components"
-// thanks to Stylus' "import css" and "paths" options
-
 @import 'prism/themes/prism-okaidia.css'
 // Check out "bower_components/prism/themes/" for available themes
 .slide1,.slide2
     width 100%
     height 100%
-    background radial-gradient(orange,#ff3333)
-    overflow hidden
+
+.s1,.s2,.s3,.s4,.s5,.s6
+	background radial-gradient(orange,#ff3333)
 
 .menu
     position absolute
+    margin 0 auto
     img
         width 400px
         height 150px
-        margin: 0 auto
-        padding: o auto
-        margin-top:-10%
+
 
 .tombol
     width 100%
-    margin-left 20%
-    margin: 0 auto
-    padding 0 auto
-    margin-top 1000px
-    
+	margin 0 auto
+	margin-top 50px
+	a
         &:hover
             background-color orange
             color white
 
-#box
-	margin-top 50px
-	text-align center
-	width auto
-	height auto            
-            
 .tmbl1,.tmbl2,.tmbl3
     font-size 20px
     font-family "Lucida Sans Unicode", "Lucida Grande", sans-serif
@@ -56,3 +42,38 @@
 
 .tmbl3
     padding 5px 30px
+
+.arr1
+	float left
+	
+.arr2
+	float right
+
+.arr1,.arr2
+	img
+		width 70px
+		height 70px
+
+.slide3
+	margin-top 60px
+	text-align center
+	font-family arial
+	.judul1
+		font-size 80px
+		font-family NorthwoodHigh
+		animation: color-change 1s infinite;
+	li
+		font-size 20px
+		color black
+	a
+		margin-top 60px
+@keyframes color-change {
+    0% { color: red; }
+    50% { color: blue; }
+    100% { color: red; }
+}
+
+@font-face {
+    font-family NorthwoodHigh
+    src url("../font/Northwood_High.ttf")
+}
