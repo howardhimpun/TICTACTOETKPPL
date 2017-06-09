@@ -41,7 +41,7 @@ html
               br
               br
               br
-              a.tmbl3(href='#')
+              a.tmbl3(href='#6')
                 h Option
                         
       section.s2
@@ -86,5 +86,14 @@ html
              img(src='images/arrow2.png' title='Previous')
             a.arr2(href='#1')
              img(src='images/arrow.png' title='Back to Menu')
+      section.s6
+        .slide6
+          h2 OPTIONS
+          .line1
+            h3 Fullscreen
+            input#button1(type='checkbox' onclick="toggleFullScreen()")
+            label.but1(for='button1')
+              img(src='images/off_button.png')
+            label.but2(for='button1')
+              img(src='images/on_button.png')
     script(src='build/build.js')
-    script(src='build/tic.js')
