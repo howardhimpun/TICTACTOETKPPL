@@ -102,3 +102,15 @@
 		animation: color-change 1s infinite
 	#button1
   		visibility hidden
+  	.but2
+		display none
+	.but1,.but2
+		&:hover
+			cursor pointer
+	#button1
+		float right
+		&:checked
+			& ~ .but1
+				display none
+			& ~ .but2
+				display inline
