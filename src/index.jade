@@ -96,5 +96,19 @@ html
               img(src='images/off_button.png')
             label.but2(for='button1')
               img(src='images/on_button.png')
+          br
+          .line2
+            h3 Mute
+            input#toggle-2(type='checkbox')
+            label.tog3(for='toggle-2')
+              img(src='images/on_button.png' onclick="document.getElementById('player').pause()")
+            label.tog4(for='toggle-2')
+              img(src='images/off_button.png' onclick="document.getElementById('player').play()")
+          br
+          .line3
+            h3 Volume
+            input#vol-control(type='range' min='0' max='100' value='100' step='1')
+          a.arr1(href='#1')
+            img(src='images/arrow2.png' title='Previous')
     script(src='build/build.js')
-    script(src='build/fullscreen.js')
+    script(src='build/options.js')

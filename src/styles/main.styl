@@ -87,7 +87,6 @@
 		font-size 35px
 	a
 		margin-top 20px
-
 .slide6
 	width 80%
 	height 80%
@@ -95,14 +94,27 @@
 	font-size 25px
 	position absolute
 	.line1
-		margin-top 40px
+		margin-top 20px
 	h2
 		font-size 70px
 		font-family Times new roman
 		animation: color-change 1s infinite
-	#button1
-  		visibility hidden
-  	.but2
+	.line1,.line2
+		h3 
+			float left
+			color blue
+			margin-left 100px
+			margin-top 8px
+	a
+		img
+			margin-top 10px
+	label
+		img
+			width 120px
+	.line3
+		h3
+			color blue
+	.but2
 		display none
 	.but1,.but2
 		&:hover
@@ -114,3 +126,24 @@
 				display none
 			& ~ .but2
 				display inline
+	.tog3,.tog4
+		margin-right -40px 
+		&:hover
+			cursor pointer
+	#toggle-2
+		float right
+		position absolute
+		width 25px
+		height 25px
+		&:checked 
+			& ~ .tog3
+				display none
+			& ~ .tog4
+				display inline
+	.tog4
+		display none
+	#vol-control
+		width 350px
+		visibility visible
+	input
+		visibility hidden
