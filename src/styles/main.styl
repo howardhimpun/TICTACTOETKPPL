@@ -34,7 +34,13 @@
     padding 5px 11px
 .tmbl3
     padding 5px 30px
-
+.sym
+	float left
+	font-size 70px
+	.ww1,.ww2,.ww5,.ww6
+		animation: color-change 3s infinite;
+	.ww3,.ww4,.ww7,.ww8
+		animation: color-change1 3s infinite;
 .s2
 	img 
 		position absolute
@@ -189,7 +195,11 @@
 		visibility visible
 	input
 		visibility hidden
-
+@keyframes color-change1 {
+	0% { color: blue; }
+	50% { color: red; }
+	100% { color: blue; }
+}
 @font-face {
 	font-family SuperMario
 	src url("../font/SuperMario256.ttf")

@@ -172,6 +172,24 @@ margin 0 auto a:hover {
 .tmbl3 {
   padding: 5px 30px;
 }
+.sym {
+  float: left;
+  font-size: 70px;
+}
+.sym .ww1,
+.sym .ww2,
+.sym .ww5,
+.sym .ww6 {
+  -webkit-animation: color-change 3s infinite;
+  animation: color-change 3s infinite;
+}
+.sym .ww3,
+.sym .ww4,
+.sym .ww7,
+.sym .ww8 {
+  -webkit-animation: color-change1 3s infinite;
+  animation: color-change1 3s infinite;
+}
 .s2 img {
   position: absolute;
   margin-top: 30px;
@@ -382,5 +400,27 @@ margin 0 auto a:hover {
   }
   100% {
     color: #f00;
+  }
+}
+@-webkit-keyframes color-change1 {
+  0% {
+    color: #00f;
+  }
+  50% {
+    color: #f00;
+  }
+  100% {
+    color: #00f;
+  }
+}
+@keyframes color-change1 {
+  0% {
+    color: #00f;
+  }
+  50% {
+    color: #f00;
+  }
+  100% {
+    color: #00f;
   }
 }
