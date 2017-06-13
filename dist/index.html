@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Tic Tac Toe</title>
+    <link rel="shortcut icon" href="images/icon.jpg">
+    <link rel="stylesheet" type="text/css" href="build/build.css">
+  </head>
+  <body>
+    <article>
+      <section class="s1">
+        <div class="slide1">
+          <marquee direction="down" width="100%" height="100%" behavior="alternate" class="sym">
+            <marquee direction="right" scrollamount="100" behavior="alternate" class="w1">
+              <h>X</h>
+            </marquee>
+            <marquee direction="left" scrollamount="50" behavior="alternate" class="w2">
+              <h>X</h>
+            </marquee>
+            <marquee direction="right" scrollamount="90" behavior="alternate" class="w3">
+              <h>O</h>
+            </marquee>
+            <marquee direction="left" scrollamount="70" behavior="alternate" class="w4">
+              <h>O</h>
+            </marquee>
+            <marquee direction="right" scrollamount="70" behavior="alternate" class="w5">
+              <h>X                                    </h>
+            </marquee>
+            <marquee direction="left" scrollamount="90" behavior="alternate" class="w6">
+              <h>X</h>
+            </marquee>
+            <marquee direction="right" scrollamount="50" behavior="alternate" class="w7">
+              <h>O</h>
+            </marquee>
+            <marquee direction="left" scrollamount="100" behavior="alternate" class="w8">
+              <h>O           </h>
+            </marquee>
+          </marquee>
+        </div>
+        <div class="menu"><img src="images/tictac.png"><br>
+          <div class="tombol">              	<a href="#2" class="tmbl1">
+              <h>Start Game</h></a><br><br><br><a href="#3" class="tmbl2">
+              <h>Instruction</h></a><br><br><br><a href="#6" class="tmbl3">
+              <h>Option</h></a></div>
+        </div>
+      </section>
+      <section class="s2">
+        <div class="isi">
+          <input id="box" type="checkbox">
+          <div class="p1">P1</div>
+          <div class="p2">P2</div>
+          <label for="box" class="tog6">
+            <div class="cvs">
+              <canvas id="canvas1" onclick="canvasClicked(1)"></canvas>
+              <canvas id="canvas2" onclick="canvasClicked(2)"></canvas>
+              <canvas id="canvas3" onclick="canvasClicked(3)"></canvas><br>
+              <canvas id="canvas4" onclick="canvasClicked(4)"></canvas>
+              <canvas id="canvas5" onclick="canvasClicked(5)"></canvas>
+              <canvas id="canvas6" onclick="canvasClicked(6)"></canvas><br>
+              <canvas id="canvas7" onclick="canvasClicked(7)"></canvas>
+              <canvas id="canvas8" onclick="canvasClicked(8)"></canvas>
+              <canvas id="canvas9" onclick="canvasClicked(9)"></canvas>
+            </div>
+          </label><a href="#1" class="arr1"><img src="images/arrow2.png" title="Back to Menu"></a>
+        </div>
+      </section>
+      <section class="s3">
+        <div class="slide3">
+          <ul>
+            <li class="judul1">Tic Tac Toe</li><br><br>
+            <li><i> Tic Tac Toe</i>
+              <is>a simple game which, if played optimally by both players, will always result in a tie. However, many players (especially younger children) still enjoy it, and Tic Tac Toe can be made significantly more complex by increasing the size of the board.</is><br>
+            </li>
+            <li><a href="#1" class="arr1"><img src="images/arrow2.png" title="Back to Menu"></a><a href="#4" class="arr2"><img src="images/arrow.png" title="Next"></a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="s4">
+        <div class="slide4">
+          <ul>
+            <li class="l1">Players</li>
+            <li>2 players</li><br>
+            <li class="l1">Goal</li>
+            <li>The goal of Tic Tac Toe is to be the first player to be the first player to get three in a row on a 3x3 grid</li>
+            <li><a href="#3" class="arr1"><img src="images/arrow2.png" title="Previous"></a><a href="#5" class="arr2"><img src="images/arrow.png" title="Next"></a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="s5">
+        <div class="slide5">
+          <ul>
+            <li class="l2">Playing Tic Tac Toe on 3x3 Board</li>
+            <li>1. X always goes first</li>
+            <li>2. Players alternate placing Xs and Os on the board until either (a) one player has three in a row, horizontally, vertically or diagonally; or (b) all nine squares are filled.</li>
+            <li>3. If a player is able to draw three Xs or three OS in a row, that player wins.</li>
+            <li>4. If all nine squares are filled and neither player has three in a row, the game is a draw.</li>
+            <li><a href="#4" class="arr1"><img src="images/arrow2.png" title="Previous"></a><a href="#1" class="arr2"><img src="images/arrow.png" title="Back to Menu"></a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="s6">
+        <div class="slide6">
+          <h2>OPTIONS</h2>
+          <div class="line1">
+            <h3>Fullscreen</h3>
+            <input id="button1" type="checkbox" onclick="toggleFullScreen()">
+            <label for="button1" class="but1"><img src="images/off_button.png"></label>
+            <label for="button1" class="but2"><img src="images/on_button.png"></label>
+          </div><br>
+          <div class="line2">
+            <h3>Mute</h3>
+            <input id="toggle-2" type="checkbox">
+            <label for="toggle-2" class="tog3"><img src="images/on_button.png" onclick="document.getElementById('player').pause()"></label>
+            <label for="toggle-2" class="tog4"><img src="images/off_button.png" onclick="document.getElementById('player').play()"></label>
+          </div><br>
+          <div class="line3">
+            <h3>Volume</h3>
+            <input id="vol-control" type="range" min="0" max="100" value="100" step="1">
+          </div><a href="#1" class="arr1"><img src="images/arrow2.png" title="Previous"></a>
+        </div>
+      </section>
+    </article>
+    <script type="text/javascript" src="build/build.js"></script>
+    <script type="text/javascript" src="build/tictac.js"></script>
+    <script type="text/javascript" src="build/option.js"></script>
+  </body>
+</html>

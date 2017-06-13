@@ -4,6 +4,7 @@ html
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
     title Tic Tac Toe
+    link(rel='shortcut icon' href='images/icon.jpg')
     link(rel='stylesheet', type='text/css', href='build/build.css')
   body
     
@@ -45,6 +46,27 @@ html
                 h Option
                         
       section.s2
+        .isi
+          input#box(type='checkbox')
+          .p1 P1
+          .p2 P2
+         
+          label.tog6(for='box')
+            .cvs
+              canvas#canvas1(onclick='canvasClicked(1)')
+              canvas#canvas2(onclick='canvasClicked(2)')
+              canvas#canvas3(onclick='canvasClicked(3)')
+              br
+              canvas#canvas4(onclick='canvasClicked(4)')
+              canvas#canvas5(onclick='canvasClicked(5)')
+              canvas#canvas6(onclick='canvasClicked(6)')
+              br
+              canvas#canvas7(onclick='canvasClicked(7)')
+              canvas#canvas8(onclick='canvasClicked(8)')
+              canvas#canvas9(onclick='canvasClicked(9)')
+          a.arr1(href='#1')
+            img(src='images/arrow2.png' title='Back to Menu')
+
       section.s3
        .slide3
          ul
@@ -110,5 +132,7 @@ html
             input#vol-control(type='range' min='0' max='100' value='100' step='1')
           a.arr1(href='#1')
             img(src='images/arrow2.png' title='Previous')
-    script(src='build/build.js')
-    script(src='build/options.js')
+
+    script(type='text/javascript' src='build/build.js')
+    script(type='text/javascript' src='build/tictac.js')
+    script(type='text/javascript' src='build/option.js')
