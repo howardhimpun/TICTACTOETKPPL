@@ -8,66 +8,73 @@
     <link rel="stylesheet" type="text/css" href="build/build.css">
   </head>
   <body>
+    <audio id="player" src="bgm/jumper.mp3" autoplay="true" loop="true"></audio>
     <article>
       <section class="s1">
         <marquee direction="down" width="100%" height="100%" behavior="alternate" class="sym">
-          <marquee direction="right" scrollamount="100" behavior="alternate" class="w1">
+          <marquee direction="right" scrollamount="100" behavior="alternate">
             <div class="ww1">X</div>
           </marquee>
-          <marquee direction="left" scrollamount="50" behavior="alternate" class="w2">
+          <marquee direction="left" scrollamount="50" behavior="alternate">
             <div class="ww2">X</div>
           </marquee>
-          <marquee direction="right" scrollamount="90" behavior="alternate" class="w3">
+          <marquee direction="right" scrollamount="90" behavior="alternate">
             <div class="ww3">O</div>
           </marquee>
-          <marquee direction="left" scrollamount="70" behavior="alternate" class="w4">
+          <marquee direction="left" scrollamount="70" behavior="alternate">
             <div class="ww4">O</div>
           </marquee>
-          <marquee direction="right" scrollamount="70" behavior="alternate" class="w5">
+          <marquee direction="right" scrollamount="70" behavior="alternate">
             <div class="ww5">X                                    </div>
           </marquee>
-          <marquee direction="left" scrollamount="90" behavior="alternate" class="w6">
+          <marquee direction="left" scrollamount="90" behavior="alternate">
             <div class="ww6">X</div>
           </marquee>
-          <marquee direction="right" scrollamount="50" behavior="alternate" class="w7">
+          <marquee direction="right" scrollamount="50" behavior="alternate">
             <div class="ww7">O</div>
           </marquee>
-          <marquee direction="left" scrollamount="100" behavior="alternate" class="w8">
+          <marquee direction="left" scrollamount="100" behavior="alternate">
             <div class="ww8">O</div>
           </marquee>
         </marquee>
-        <div class="menu"><img src="images/tictac.png"><br>
-          <div class="tombol">              	<a href="#2" class="tmbl1">
-              <h>Start Game</h></a><br><br><br><a href="#3" class="tmbl2">
-              <h>Instruction</h></a><br><br><br><a href="#6" class="tmbl3">
-              <h>Option</h></a></div>
+        <div class="menu"><img src="images/tictac.png"><br><br>
+          <div class="tombol"><a href="#2" class="tmbl1">
+              <h>Start Game</h></a><br><br><a href="#3" class="tmbl2">
+              <h>Instruction</h></a><br><br><a href="#6" class="tmbl3">
+              <h>Option</h></a><br><br><a href="#7" class="tmbl4">
+              <h>Credits</h></a></div>
+        </div>
+        <div class="musik">
+          <input id="toggle-1" type="checkbox">
+          <label for="toggle-1" class="tog1"><img src="images/on.png" onclick="document.getElementById('player').pause()" class="im1"></label>
+          <label for="toggle-1" class="tog2"><img src="images/off.png" onclick="document.getElementById('player').play()" class="im2"></label>
         </div>
       </section>
       <section class="s2">
         <marquee direction="down" width="100%" height="100%" behavior="alternate" class="sym">
-          <marquee direction="right" scrollamount="100" behavior="alternate" class="w1">
+          <marquee direction="right" scrollamount="100" behavior="alternate">
             <div class="ww1">X</div>
           </marquee>
-          <marquee direction="left" scrollamount="50" behavior="alternate" class="w2">
+          <marquee direction="left" scrollamount="50" behavior="alternate">
             <div class="ww2">X</div>
           </marquee>
-          <marquee direction="right" scrollamount="90" behavior="alternate" class="w3">
+          <marquee direction="right" scrollamount="90" behavior="alternate">
             <div class="ww3">O</div>
           </marquee>
-          <marquee direction="left" scrollamount="70" behavior="alternate" class="w4">
+          <marquee direction="left" scrollamount="70" behavior="alternate">
             <div class="ww4">O</div>
           </marquee>
-          <marquee direction="right" scrollamount="70" behavior="alternate" class="w5">
+          <marquee direction="right" scrollamount="70" behavior="alternate">
             <div class="ww5">X                                    </div>
           </marquee>
-          <marquee direction="left" scrollamount="90" behavior="alternate" class="w6">
+          <marquee direction="left" scrollamount="90" behavior="alternate">
             <div class="ww6">X</div>
           </marquee>
-          <marquee direction="right" scrollamount="50" behavior="alternate" class="w7">
+          <marquee direction="right" scrollamount="50" behavior="alternate">
             <div class="ww7">O</div>
           </marquee>
-          <marquee direction="left" scrollamount="100" behavior="alternate" class="w8">
-            <div class="ww8">O</div>
+          <marquee direction="left" scrollamount="100" behavior="alternate">
+            <div class="ww8">O   </div>
           </marquee>
         </marquee>
         <div class="isi">
@@ -90,38 +97,32 @@
         </div>
       </section>
       <section class="s3">
-        <div class="slide3">
-          <ul>
-            <li class="judul1">Tic Tac Toe</li><br><br>
-            <li><i> Tic Tac Toe</i>
-              <is>a simple game which, if played optimally by both players, will always result in a tie. However, many players (especially younger children) still enjoy it, and Tic Tac Toe can be made significantly more complex by increasing the size of the board.</is><br>
-            </li>
-            <li><a href="#1" class="arr1"><img src="images/arrow2.png" title="Back to Menu"></a><a href="#4" class="arr2"><img src="images/arrow.png" title="Next"></a></li>
-          </ul>
-        </div>
+        <ul>
+          <li class="judul1">Tic Tac Toe</li><br><br>
+          <li><i> Tic Tac Toe</i>
+            <is>a simple game which, if played optimally by both players, will always result in a tie. However, many players (especially younger children) still enjoy it, and Tic Tac Toe can be made significantly more complex by increasing the size of the board.</is><br>
+          </li>
+          <li><a href="#1" class="arr1"><img src="images/arrow2.png" title="Back to Menu"></a><a href="#4" class="arr2"><img src="images/arrow.png" title="Next"></a></li>
+        </ul>
       </section>
       <section class="s4">
-        <div class="slide4">
-          <ul>
-            <li class="l1">Players</li>
-            <li>2 players</li><br>
-            <li class="l1">Goal</li>
-            <li>The goal of Tic Tac Toe is to be the first player to be the first player to get three in a row on a 3x3 grid</li>
-            <li><a href="#3" class="arr1"><img src="images/arrow2.png" title="Previous"></a><a href="#5" class="arr2"><img src="images/arrow.png" title="Next"></a></li>
-          </ul>
-        </div>
+        <ul>
+          <li class="l1">Players</li>
+          <li>2 players</li><br>
+          <li class="l1">Goal</li>
+          <li>The goal of Tic Tac Toe is to be the first player to get three in a row on a 3x3 grid</li>
+          <li><a href="#3" class="arr1"><img src="images/arrow2.png" title="Previous"></a><a href="#5" class="arr2"><img src="images/arrow.png" title="Next"></a></li>
+        </ul>
       </section>
       <section class="s5">
-        <div class="slide5">
-          <ul>
-            <li class="l2">Playing Tic Tac Toe on 3x3 Board</li>
-            <li>1. X always goes first</li>
-            <li>2. Players alternate placing Xs and Os on the board until either (a) one player has three in a row, horizontally, vertically or diagonally; or (b) all nine squares are filled.</li>
-            <li>3. If a player is able to draw three Xs or three OS in a row, that player wins.</li>
-            <li>4. If all nine squares are filled and neither player has three in a row, the game is a draw.</li>
-            <li><a href="#4" class="arr1"><img src="images/arrow2.png" title="Previous"></a><a href="#1" class="arr2"><img src="images/arrow.png" title="Back to Menu"></a></li>
-          </ul>
-        </div>
+        <ul>
+          <li class="l2">Playing Tic Tac Toe on a 3x3 Board</li>
+          <li>1. X always goes first.</li>
+          <li>2. Players alternate placing Xs and Os on the board until either (a) one player has three in a row, horizontally, vertically or diagonally; or (b) all nine squares are filled.</li>
+          <li>3. If a player is able to draw three Xs or three Os in a row, that player wins.</li>
+          <li>4. If all nine squares are filled and neither player has three in a row, the game is a draw.</li>
+          <li><a href="#4" class="arr1"><img src="images/arrow2.png" title="Previous"></a><a href="#1" class="arr2"><img src="images/arrow.png" title="Back to Menu"></a></li>
+        </ul>
       </section>
       <section class="s6">
         <div class="slide6">
@@ -143,6 +144,101 @@
             <input id="vol-control" type="range" min="0" max="100" value="100" step="1">
           </div><a href="#1" class="arr1"><img src="images/arrow2.png" title="Previous"></a>
         </div>
+      </section>
+      <section class="s7">
+        <ul>
+          <li class="cr1">Credits</li>
+          <li>Howard</li>
+          <li>Ian Steven</li>
+          <li>Jeffry Wijaya</li>
+          <li>Yuni Adelia</li>
+        </ul>
+      </section>
+      <section class="s8">
+        <ul>
+          <li>Music</li>
+          <li>Waterflame - Jumper</li>
+        </ul>
+      </section>
+      <section class="s9">
+        <ul>
+          <li></li>
+          <li>H I J Y</li>
+          <li class="t1">Tic Tac Toe</li>
+          <li><a href="#1" class="arr1"><img src="images/arrow2.png" title="Back to Game"></a></li>
+        </ul>
+      </section>
+      <section class="s10">
+        <marquee direction="down" width="100%" height="100%" behavior="alternate" class="sym">
+          <marquee direction="right" scrollamount="100" behavior="alternate">
+            <div class="ww1">X</div>
+          </marquee>
+          <marquee direction="left" scrollamount="50" behavior="alternate">
+            <div class="ww2">X</div>
+          </marquee>
+          <marquee direction="right" scrollamount="90" behavior="alternate">
+            <div class="ww3">O</div>
+          </marquee>
+          <marquee direction="left" scrollamount="70" behavior="alternate">
+            <div class="ww4">O</div>
+          </marquee>
+          <marquee direction="right" scrollamount="70" behavior="alternate">
+            <div class="ww5">X                                    </div>
+          </marquee>
+          <marquee direction="left" scrollamount="90" behavior="alternate">
+            <div class="ww6">X</div>
+          </marquee>
+          <marquee direction="right" scrollamount="50" behavior="alternate">
+            <div class="ww7">O</div>
+          </marquee>
+          <marquee direction="left" scrollamount="100" behavior="alternate">
+            <div class="ww8">O</div>
+          </marquee>
+        </marquee>
+        <ul>
+          <li class="dr">DRAW</li><br><br>
+          <li class="tg"><a href="#2" class="tmb1">Play Again</a><a href="#1" class="tmb2">Main Menu</a></li>
+        </ul>
+      </section>
+      <section class="s11">
+        <marquee direction="down" width="100%" height="100%" behavior="alternate" class="sym">
+          <marquee direction="right" scrollamount="100" behavior="alternate">
+            <div class="ww1">X</div>
+          </marquee>
+          <marquee direction="left" scrollamount="50" behavior="alternate">
+            <div class="ww2">X</div>
+          </marquee>
+          <marquee direction="right" scrollamount="70" behavior="alternate">
+            <div class="ww5">X                                    </div>
+          </marquee>
+          <marquee direction="left" scrollamount="90" behavior="alternate">
+            <div class="ww6">X</div>
+          </marquee>
+        </marquee>
+        <ul>
+          <li class="xw">X WON</li><br><br>
+          <li class="tg"><a href="#2" class="tmb1">Play Again</a><a href="#1" class="tmb2">Main Menu</a></li>
+        </ul>
+      </section>
+      <section class="s12">
+        <marquee direction="down" width="100%" height="100%" behavior="alternate" class="sym">
+          <marquee direction="right" scrollamount="90" behavior="alternate">
+            <div class="ww3">O</div>
+          </marquee>
+          <marquee direction="left" scrollamount="70" behavior="alternate">
+            <div class="ww4">O</div>
+          </marquee>
+          <marquee direction="right" scrollamount="50" behavior="alternate">
+            <div class="ww7">O</div>
+          </marquee>
+          <marquee direction="left" scrollamount="100" behavior="alternate">
+            <div class="ww8">O</div>
+          </marquee>
+        </marquee>
+        <ul>
+          <li class="ow">O WON</li><br><br>
+          <li class="tg"><a href="#2" class="tmb1">Play Again</a><a href="#1" class="tmb2">Main Menu</a></li>
+        </ul>
       </section>
     </article>
     <script type="text/javascript" src="build/build.js"></script>

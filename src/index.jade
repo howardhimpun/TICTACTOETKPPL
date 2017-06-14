@@ -7,61 +7,71 @@ html
     link(rel='shortcut icon' href='images/icon.jpg')
     link(rel='stylesheet', type='text/css', href='build/build.css')
   body
-    
+    audio#player(src='bgm/jumper.mp3' autoplay='true' loop='true')
     article
       section.s1
         marquee.sym(direction='down' width='100%' height='100%' behavior='alternate')
-          marquee.w1(direction='right' scrollamount='100' behavior='alternate')
+          marquee(direction='right' scrollamount='100' behavior='alternate')
             .ww1 X
-          marquee.w2(direction='left' scrollamount='50' behavior='alternate')
+          marquee(direction='left' scrollamount='50' behavior='alternate')
             .ww2 X
-          marquee.w3(direction='right' scrollamount='90' behavior='alternate')
+          marquee(direction='right' scrollamount='90' behavior='alternate')
             .ww3 O
-          marquee.w4(direction='left' scrollamount='70' behavior='alternate')
+          marquee(direction='left' scrollamount='70' behavior='alternate')
             .ww4 O
-          marquee.w5(direction='right' scrollamount='70' behavior='alternate')
+          marquee(direction='right' scrollamount='70' behavior='alternate')
             .ww5 X                                    
-          marquee.w6(direction='left' scrollamount='90' behavior='alternate')
+          marquee(direction='left' scrollamount='90' behavior='alternate')
             .ww6 X
-          marquee.w7(direction='right' scrollamount='50' behavior='alternate')
+          marquee(direction='right' scrollamount='50' behavior='alternate')
             .ww7 O
-          marquee.w8(direction='left' scrollamount='100' behavior='alternate')
+          marquee(direction='left' scrollamount='100' behavior='alternate')
             .ww8 O
         .menu
           img(src='images/tictac.png')
           br
-          .tombol               	
+          br
+          .tombol
             a.tmbl1(href='#2')
               h Start Game
-            br
             br
             br
             a.tmbl2(href='#3')
               h Instruction
             br
             br
-            br
             a.tmbl3(href='#6')
               h Option
-                        
+            br
+            br
+            a.tmbl4(href='#7')
+              h Credits
+        .musik
+          input#toggle-1(type='checkbox')
+          label.tog1(for='toggle-1')
+            img.im1(src='images/on.png' onclick="document.getElementById('player').pause()")
+          label.tog2(for='toggle-1')
+            img.im2(src='images/off.png' onclick="document.getElementById('player').play()")
+
+
       section.s2
         marquee.sym(direction='down' width='100%' height='100%' behavior='alternate')
-          marquee.w1(direction='right' scrollamount='100' behavior='alternate')
+          marquee(direction='right' scrollamount='100' behavior='alternate')
             .ww1 X
-          marquee.w2(direction='left' scrollamount='50' behavior='alternate')
+          marquee(direction='left' scrollamount='50' behavior='alternate')
             .ww2 X
-          marquee.w3(direction='right' scrollamount='90' behavior='alternate')
+          marquee(direction='right' scrollamount='90' behavior='alternate')
             .ww3 O
-          marquee.w4(direction='left' scrollamount='70' behavior='alternate')
+          marquee(direction='left' scrollamount='70' behavior='alternate')
             .ww4 O
-          marquee.w5(direction='right' scrollamount='70' behavior='alternate')
+          marquee(direction='right' scrollamount='70' behavior='alternate')
             .ww5 X                                    
-          marquee.w6(direction='left' scrollamount='90' behavior='alternate')
+          marquee(direction='left' scrollamount='90' behavior='alternate')
             .ww6 X
-          marquee.w7(direction='right' scrollamount='50' behavior='alternate')
+          marquee(direction='right' scrollamount='50' behavior='alternate')
             .ww7 O
-          marquee.w8(direction='left' scrollamount='100' behavior='alternate')
-            .ww8 O
+          marquee(direction='left' scrollamount='100' behavior='alternate')
+            .ww8 O   
         .isi
           input#box(type='checkbox')
           .p1 P1
@@ -83,47 +93,51 @@ html
           a.arr1(href='#1')
             img(src='images/arrow2.png' title='Back to Menu')
 
+
       section.s3
-       .slide3
-         ul
+        ul
           li.judul1 Tic Tac Toe
           br
           br
-          li
+          li 
             i  Tic Tac Toe
             is a simple game which, if played optimally by both players, will always result in a tie. However, many players (especially younger children) still enjoy it, and Tic Tac Toe can be made significantly more complex by increasing the size of the board.
             br
           li
             a.arr1(href='#1')
-             img(src='images/arrow2.png' title='Back to Menu')
+              img(src='images/arrow2.png' title='Back to Menu')
             a.arr2(href='#4')
-             img(src='images/arrow.png' title='Next')
+              img(src='images/arrow.png' title='Next')
+
+
       section.s4
-       .slide4
-         ul
+        ul
           li.l1 Players
           li 2 players
           br
           li.l1 Goal
-          li The goal of Tic Tac Toe is to be the first player to be the first player to get three in a row on a 3x3 grid
+          li The goal of Tic Tac Toe is to be the first player to get three in a row on a 3x3 grid
           li
             a.arr1(href='#3')
-             img(src='images/arrow2.png' title='Previous')
+              img(src='images/arrow2.png' title='Previous')
             a.arr2(href='#5')
-             img(src='images/arrow.png' title='Next')
+              img(src='images/arrow.png' title='Next')
+
+
       section.s5
-       .slide5
-         ul
-          li.l2 Playing Tic Tac Toe on 3x3 Board
-          li 1. X always goes first
+        ul
+          li.l2 Playing Tic Tac Toe on a 3x3 Board
+          li 1. X always goes first.
           li 2. Players alternate placing Xs and Os on the board until either (a) one player has three in a row, horizontally, vertically or diagonally; or (b) all nine squares are filled.
-          li 3. If a player is able to draw three Xs or three OS in a row, that player wins.
+          li 3. If a player is able to draw three Xs or three Os in a row, that player wins.
           li 4. If all nine squares are filled and neither player has three in a row, the game is a draw.
           li
             a.arr1(href='#4')
-             img(src='images/arrow2.png' title='Previous')
+              img(src='images/arrow2.png' title='Previous')
             a.arr2(href='#1')
-             img(src='images/arrow.png' title='Back to Menu')
+              img(src='images/arrow.png' title='Back to Menu')
+
+
       section.s6
         .slide6
           h2 OPTIONS
@@ -148,6 +162,97 @@ html
             input#vol-control(type='range' min='0' max='100' value='100' step='1')
           a.arr1(href='#1')
             img(src='images/arrow2.png' title='Previous')
+
+
+      section.s7
+        ul
+          li.cr1 Credits
+          li Howard
+          li Ian Steven
+          li Jeffry Wijaya
+          li Yuni Adelia
+
+
+      section.s8
+        ul
+          li Music
+          li Waterflame - Jumper
+
+
+      section.s9
+        ul
+          li
+          li H I J Y
+          li.t1 Tic Tac Toe
+          li 
+            a.arr1(href='#1')
+              img(src='images/arrow2.png' title='Back to Game')
+
+
+      section.s10
+        marquee.sym(direction='down' width='100%' height='100%' behavior='alternate')
+          marquee(direction='right' scrollamount='100' behavior='alternate')
+            .ww1 X
+          marquee(direction='left' scrollamount='50' behavior='alternate')
+            .ww2 X
+          marquee(direction='right' scrollamount='90' behavior='alternate')
+            .ww3 O
+          marquee(direction='left' scrollamount='70' behavior='alternate')
+            .ww4 O
+          marquee(direction='right' scrollamount='70' behavior='alternate')
+            .ww5 X                                    
+          marquee(direction='left' scrollamount='90' behavior='alternate')
+            .ww6 X
+          marquee(direction='right' scrollamount='50' behavior='alternate')
+            .ww7 O
+          marquee(direction='left' scrollamount='100' behavior='alternate')
+            .ww8 O
+        ul 
+          li.dr DRAW
+          br
+          br
+          li.tg
+            a.tmb1(href='#2') Play Again
+            a.tmb2(href='#1') Main Menu
+
+
+      section.s11
+        marquee.sym(direction='down' width='100%' height='100%' behavior='alternate')
+          marquee(direction='right' scrollamount='100' behavior='alternate')
+            .ww1 X
+          marquee(direction='left' scrollamount='50' behavior='alternate')
+            .ww2 X
+          marquee(direction='right' scrollamount='70' behavior='alternate')
+            .ww5 X                                    
+          marquee(direction='left' scrollamount='90' behavior='alternate')
+            .ww6 X
+          
+        ul 
+          li.xw X WON
+          br
+          br
+          li.tg
+            a.tmb1(href='#2') Play Again
+            a.tmb2(href='#1') Main Menu
+
+
+      section.s12
+        marquee.sym(direction='down' width='100%' height='100%' behavior='alternate')
+          marquee(direction='right' scrollamount='90' behavior='alternate')
+            .ww3 O
+          marquee(direction='left' scrollamount='70' behavior='alternate')
+            .ww4 O
+          marquee(direction='right' scrollamount='50' behavior='alternate')
+            .ww7 O
+          marquee(direction='left' scrollamount='100' behavior='alternate')
+            .ww8 O
+        ul 
+          li.ow O WON
+          br
+          br
+          li.tg
+            a.tmb1(href='#2') Play Again
+            a.tmb2(href='#1') Main Menu
 
     script(type='text/javascript' src='build/build.js')
     script(type='text/javascript' src='build/tictac.js')

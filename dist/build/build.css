@@ -1,159 +1,38 @@
-/**
- * okaidia theme for JavaScript, CSS and HTML
- * Loosely based on Monokai textmate theme by http://www.monokai.nl/
- * @author ocodia
- */
-
-code[class*="language-"],
-pre[class*="language-"] {
-	color: #f8f8f2;
-	background: none;
-	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
-	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-	text-align: left;
-	white-space: pre;
-	word-spacing: normal;
-	word-break: normal;
-	word-wrap: normal;
-	line-height: 1.5;
-
-	-moz-tab-size: 4;
-	tab-size: 4;
-
-	-webkit-hyphens: none;
-	-moz-hyphens: none;
-	-ms-hyphens: none;
-	hyphens: none;
-}
-
-/* Code blocks */
-pre[class*="language-"] {
-	padding: 1em;
-	margin: .5em 0;
-	overflow: auto;
-	border-radius: 0.3em;
-}
-
-:not(pre) > code[class*="language-"],
-pre[class*="language-"] {
-	background: #272822;
-}
-
-/* Inline code */
-:not(pre) > code[class*="language-"] {
-	padding: .1em;
-	border-radius: .3em;
-	white-space: normal;
-}
-
-.token.comment,
-.token.prolog,
-.token.doctype,
-.token.cdata {
-	color: slategray;
-}
-
-.token.punctuation {
-	color: #f8f8f2;
-}
-
-.namespace {
-	opacity: .7;
-}
-
-.token.property,
-.token.tag,
-.token.constant,
-.token.symbol,
-.token.deleted {
-	color: #f92672;
-}
-
-.token.boolean,
-.token.number {
-	color: #ae81ff;
-}
-
-.token.selector,
-.token.attr-name,
-.token.string,
-.token.char,
-.token.builtin,
-.token.inserted {
-	color: #a6e22e;
-}
-
-.token.operator,
-.token.entity,
-.token.url,
-.language-css .token.string,
-.style .token.string,
-.token.variable {
-	color: #f8f8f2;
-}
-
-.token.atrule,
-.token.attr-value,
-.token.function {
-	color: #e6db74;
-}
-
-.token.keyword {
-	color: #66d9ef;
-}
-
-.token.regex,
-.token.important {
-	color: #fd971f;
-}
-
-.token.important,
-.token.bold {
-	font-weight: bold;
-}
-.token.italic {
-	font-style: italic;
-}
-
-.token.entity {
-	cursor: help;
-}
-
-.slide1,
-.slide2 {
-  width: 100%;
-  height: 100%;
+article {
+  background: -webkit-radial-gradient(#ffa500, #f33);
+  background: radial-gradient(#ffa500, #f33);
 }
 .s1,
 .s2,
 .s3,
 .s4,
 .s5,
-.s6 {
-  background: -webkit-radial-gradient(#ffa500, #f33);
-  background: radial-gradient(#ffa500, #f33);
+.s6,
+.s10,
+.s11,
+.s12 {
+  background-color: rgba(255,255,255,0);
 }
-.menu {
-  position: absolute;
+.s1 .menu {
   margin: 0 auto;
+  position: absolute;
 }
-.menu img {
+.s1 .menu img {
   width: 400px;
   height: 150px;
 }
-.tombol {
+.s1 .tombol {
   width: 100%;
+  margin-top: 30px;
 }
-margin 0 auto {
-  margin-top: 50px;
-}
-margin 0 auto a:hover {
+.s1 .tombol a:hover {
   background-color: #ffa500;
   color: #fff;
 }
-.tmbl1,
-.tmbl2,
-.tmbl3 {
+.s1 .tmbl1,
+.s1 .tmbl2,
+.s1 .tmbl3,
+.s1 .tmbl4 {
   font-size: 20px;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   color: #000;
@@ -163,14 +42,47 @@ margin 0 auto a:hover {
   border-style: outset;
   text-decoration: none;
 }
-.tmbl1 {
+.s1 .tmbl1 {
   padding: 5px 10px;
 }
-.tmbl2 {
+.s1 .tmbl2 {
   padding: 5px 11px;
 }
-.tmbl3 {
+.s1 .tmbl3 {
   padding: 5px 30px;
+}
+.s1 .tmbl4 {
+  padding: 5px 28px;
+}
+.s1 .musik {
+  position: absolute;
+  margin-top: 200px;
+  margin-left: -250px;
+}
+.s1 .im2 {
+  margin-top: -15px;
+  margin-left: 15px;
+  width: 70px;
+  height: 70px;
+}
+.s1 .im2:hover {
+  cursor: pointer;
+}
+.s1 .im1 {
+  width: 80px;
+  height: 80px;
+}
+.s1 .im1:hover {
+  cursor: pointer;
+}
+.s1 #toggle-1:checked ~ .tog1 {
+  display: none;
+}
+.s1 #toggle-1:checked ~ .tog2 {
+  display: block;
+}
+.s1 .tog2 {
+  display: none;
 }
 .sym {
   float: left;
@@ -189,6 +101,9 @@ margin 0 auto a:hover {
 .sym .ww8 {
   -webkit-animation: color-change1 3s infinite;
   animation: color-change1 3s infinite;
+}
+marquee {
+  width: 1000px;
 }
 .s2 img {
   position: absolute;
@@ -246,61 +161,64 @@ margin 0 auto a:hover {
   width: 70px;
   height: 70px;
 }
-.slide3 {
-  margin-top: 60px;
+.s3 {
   text-align: center;
   font-family: arial;
 }
-.slide3 .judul1 {
+.s3 .judul1 {
+  margin-top: -80px;
   font-size: 80px;
   font-family: NorthwoodHigh;
   -webkit-animation: color-change 1s infinite;
   animation: color-change 1s infinite;
 }
-.slide3 li {
+.s3 li {
   font-size: 20px;
   color: #000;
+  margin-top: 20px;
 }
-.slide3 a {
-  margin-top: 60px;
+.s3 .arr1 {
+  position: absolute;
+  margin-top: 50px;
+  margin-left: -290px;
 }
-@font-face {
-  font-family: NorthwoodHigh;
-  src: url("../font/Northwood_High.ttf");
+.s3 .arr2 {
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 220px;
 }
-.slide4 {
+.s4 {
   text-align: center;
-  margin-top: 40px;
 }
-.slide4 ul {
+.s4 ul {
+  margin-top: 50px;
   color: #000;
   font-size: 25px;
 }
-.slide4 .l1 {
+.s4 .l1 {
   color: #fff;
   font-size: 40px;
 }
-.slide4 a {
-  margin-top: 100px;
+.s4 a {
+  margin-top: 90px;
 }
-.slide5 {
+.s5 {
   text-align: left;
-  margin-top: 20px;
 }
-.slide5 ul {
+.s5 ul {
   color: #000;
   font-size: 25px;
 }
-.slide5 .l2 {
+.s5 .l2 {
   color: #fff;
   font-size: 35px;
 }
-.slide5 a {
-  margin-top: 20px;
+.s5 a {
+  margin-top: 30px;
 }
 .slide6 {
-  width: 80%;
-  height: 80%;
+  width: 85%;
+  height: 90%;
   background: #ffa500;
   font-size: 25px;
   position: absolute;
@@ -323,6 +241,7 @@ margin 0 auto a:hover {
 }
 .slide6 a img {
   margin-top: 10px;
+  margin-left: 10px;
 }
 .slide6 label img {
   width: 120px;
@@ -373,8 +292,103 @@ margin 0 auto a:hover {
   width: 350px;
   visibility: visible;
 }
-.slide6 input {
+.s7 {
+  background-color: #000;
+  width: 1000px;
+  margin-left: -500px;
+  color: #fff;
+  font-family: SuperMario;
+  font-size: 40px;
+}
+.s7 .cr1 {
+  font-size: 60px;
+  margin-bottom: 70px;
+}
+.s8 {
+  background-color: #000;
+  width: 1000px;
+  margin-left: -500px;
+  color: #fff;
+  font-family: SuperMario;
+  font-size: 40px;
+}
+.s8 li {
+  margin-bottom: 50px;
+}
+.s9 {
+  background-color: #000;
+  width: 1000px;
+  margin-left: -500px;
+  color: #fff;
+  font-family: NorthwoodHigh;
+  font-size: 150px;
+}
+.s9 .t1 {
+  font-size: 40px;
+}
+.s9 img {
+  position: absolute;
+  margin-left: -100px;
+  margin-top: 30px;
+}
+.s9 img:hover {
+  cursor: pointer;
+}
+.s10 a,
+.s11 a,
+.s12 a {
+  font-size: 20px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  color: #000;
+  text-align: center;
+  background-color: #fc0;
+  border-color: #fc0;
+  border-style: outset;
+  text-decoration: none;
+}
+.s10 a:hover,
+.s11 a:hover,
+.s12 a:hover {
+  background-color: #ffa500;
+  color: #fff;
+}
+.s10 ul,
+.s11 ul,
+.s12 ul {
+  position: absolute;
+}
+.s10 .tg,
+.s11 .tg,
+.s12 .tg {
+  margin: 0 auto;
+  width: 300px;
+}
+.s10 .tmb1,
+.s11 .tmb1,
+.s12 .tmb1 {
+  padding: 5px 10px;
+  float: left;
+}
+.s10 .tmb2,
+.s11 .tmb2,
+.s12 .tmb2 {
+  padding: 5px 6px;
+  float: right;
+}
+.dr,
+.xw,
+.ow {
+  font-size: 125px;
+  font-family: SuperMario;
+  -webkit-animation: color-change2 3s infinite;
+  animation: color-change2 3s infinite;
+}
+input {
   visibility: hidden;
+}
+@font-face {
+  font-family: NorthwoodHigh;
+  src: url("../font/Northwood_High.ttf");
 }
 @font-face {
   font-family: SuperMario;
@@ -422,5 +436,45 @@ margin 0 auto a:hover {
   }
   100% {
     color: #00f;
+  }
+}
+@-webkit-keyframes color-change2 {
+  0% {
+    color: #f00;
+  }
+  20% {
+    color: #00f;
+  }
+  40% {
+    color: #ff0;
+  }
+  60% {
+    color: #008000;
+  }
+  80% {
+    color: #800080;
+  }
+  100% {
+    color: #f00;
+  }
+}
+@keyframes color-change2 {
+  0% {
+    color: #f00;
+  }
+  20% {
+    color: #00f;
+  }
+  40% {
+    color: #ff0;
+  }
+  60% {
+    color: #008000;
+  }
+  80% {
+    color: #800080;
+  }
+  100% {
+    color: #f00;
   }
 }

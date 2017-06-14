@@ -1,39 +1,65 @@
-@import 'prism/themes/prism-okaidia.css'
-// Check out "bower_components/prism/themes/" for available themes
-.slide1,.slide2
-    width 100%
-    height 100%
-.s1,.s2,.s3,.s4,.s5,.s6
+article
 	background radial-gradient(orange,#ff3333)
-.menu
-    position absolute
-    margin 0 auto
-    img
-        width 400px
-        height 150px
-.tombol
-    width 100%
-	margin 0 auto
-	margin-top 50px
-	a
-        &:hover
-            background-color orange
-            color white
-.tmbl1,.tmbl2,.tmbl3
-    font-size 20px
-    font-family "Lucida Sans Unicode", "Lucida Grande", sans-serif
-    color black
-    text-align center
-    background-color #FC0
-    border-color #FC0
-    border-style outset
-    text-decoration none
-.tmbl1
-    padding 5px 10px
-.tmbl2
-    padding 5px 11px
-.tmbl3
-    padding 5px 30px
+
+.s1,.s2,.s3,.s4,.s5,.s6,.s10,.s11,.s12
+	background-color rgba(255,255,255,0)
+
+.s1
+	.menu
+		margin 0 auto
+		position absolute
+		img
+			width 400px
+			height 150px
+	.tombol
+		width 100%
+		margin-top 30px
+		a
+			&:hover
+				background-color orange
+				color white
+	.tmbl1,.tmbl2,.tmbl3,.tmbl4
+		font-size 20px
+		font-family "Lucida Sans Unicode", "Lucida Grande", sans-serif
+		color black
+		text-align center
+		background-color #FC0
+		border-color #FC0
+		border-style outset
+		text-decoration none
+	.tmbl1
+		padding 5px 10px
+	.tmbl2
+		padding 5px 11px
+	.tmbl3
+		padding 5px 30px
+	.tmbl4
+		padding 5px 28px
+	.musik
+		position absolute
+		margin-top 200px
+		margin-left -250px
+	.im2
+		margin-top -15px
+		margin-left 15px
+		width 70px
+		height 70px
+		&:hover
+			cursor pointer
+	.im1
+		width 80px
+		height 80px
+		&:hover
+			cursor pointer
+	#toggle-1
+		&:checked 
+			& ~ .tog1
+				display none
+			& ~ .tog2
+				display block
+	.tog2
+		display none
+
 .sym
 	float left
 	font-size 70px
@@ -41,6 +67,9 @@
 		animation: color-change 3s infinite;
 	.ww3,.ww4,.ww7,.ww8
 		animation: color-change1 3s infinite;
+marquee
+	width 1000px
+
 .s2
 	img 
 		position absolute
@@ -84,49 +113,48 @@
 
 .arr1
 	float left
-	
 .arr2
 	float right
 .arr1,.arr2
 	img
 		width 70px
 		height 70px
-.slide3
-	margin-top 60px
+
+.s3
 	text-align center
 	font-family arial
 	.judul1
+		margin-top -80px
 		font-size 80px
 		font-family NorthwoodHigh
 		animation: color-change 1s infinite;
 	li
 		font-size 20px
 		color black
-	a
-		margin-top 60px
-@keyframes color-change {
-    0% { color: red; }
-    50% { color: blue; }
-    100% { color: red; }
-}
-@font-face {
-    font-family NorthwoodHigh
-    src url("../font/Northwood_High.ttf")
-}
-.slide4
+		margin-top 20px
+	.arr1
+		position absolute
+		margin-top 50px
+		margin-left -290px
+	.arr2
+		position absolute
+		margin-top 50px
+		margin-left 220px
+
+.s4
 	text-align center
-	margin-top 40px
 	ul
+		margin-top 50px
 		color black
 		font-size 25px
 	.l1
 		color white
 		font-size 40px
 	a
-		margin-top 100px
-.slide5
+		margin-top 90px
+
+.s5
 	text-align left
-	margin-top 20px
 	ul
 		color black
 		font-size 25px
@@ -134,10 +162,11 @@
 		color white
 		font-size 35px
 	a
-		margin-top 20px
+		margin-top 30px
+
 .slide6
-	width 80%
-	height 80%
+	width 85%
+	height 90%
 	background orange
 	font-size 25px
 	position absolute
@@ -156,6 +185,7 @@
 	a
 		img
 			margin-top 10px
+			margin-left 10px
 	label
 		img
 			width 120px
@@ -193,13 +223,103 @@
 	#vol-control
 		width 350px
 		visibility visible
-	input
-		visibility hidden
+
+.s7
+	background-color black
+	width 1000px
+	margin-left -500px
+	color white
+	font-family SuperMario
+	font-size 40px
+	.cr1
+		font-size 60px
+		margin-bottom 70px
+
+.s8
+	background-color black
+	width 1000px
+	margin-left -500px
+	color white
+	font-family SuperMario
+	font-size 40px
+	li
+		margin-bottom 50px
+
+.s9
+	background-color black
+	width 1000px
+	margin-left -500px
+	color white
+	font-family NorthwoodHigh
+	font-size 150px
+	.t1
+		font-size 40px
+	img
+		position absolute
+		margin-left -100px
+		margin-top 30px
+		&:hover
+			cursor pointer
+
+.s10,.s11,.s12
+	a
+		font-size 20px
+		font-family "Lucida Sans Unicode", "Lucida Grande", sans-serif
+		color black
+		text-align center
+		background-color #FC0
+		border-color #FC0
+		border-style outset
+		text-decoration none
+		&:hover
+				background-color orange
+				color white
+	ul
+		position absolute
+	.tg
+		margin 0 auto
+		width 300px
+	.tmb1
+		padding 5px 10px
+		float left
+	.tmb2
+		padding 5px 6px
+		float right
+
+.dr,.xw,.ow
+	font-size 125px
+	font-family SuperMario
+	animation: color-change2 3s infinite;
+
+
+input
+	visibility hidden
+
+@keyframes color-change {
+	0% { color: red; }
+	50% { color: blue; }
+	100% { color: red; }
+}
 @keyframes color-change1 {
 	0% { color: blue; }
 	50% { color: red; }
 	100% { color: blue; }
 }
+
+@keyframes color-change2 {
+	0% { color: red; }
+	20% { color: blue; }
+	40% { color: yellow; }
+	60% { color: green; }
+	80% { color: purple; }
+	100% { color: red; }
+}
+
+@font-face {
+	font-family NorthwoodHigh
+	src url("../font/Northwood_High.ttf")
+}
+
 @font-face {
 	font-family SuperMario
 	src url("../font/SuperMario256.ttf")

@@ -56,12 +56,12 @@ function canvasClicked(canvasNumber){
 	checkForWinners(content[canvasNumber-1]);
 
 	if(squaresFilled==9){
-		alert("GAME OVER!");
+		location.assign("#10");
 		location.reload(true);
 	}
 
 	}else{
-		alert("SUDAH TERISI!");
+		alert("Already Filled!");
 	}
 
 }
@@ -69,19 +69,16 @@ function canvasClicked(canvasNumber){
 function checkForWinners(symbol){
 	for(var a = 0; a < winningCombinations.length; a++){
 		if(content[winningCombinations[a][0]]==symbol&&content[winningCombinations[a][1]]==	symbol&&content[winningCombinations[a][2]]==symbol){
-			alert(symbol+ " WON!");
-			playAgain();
+			if(symbol == 'O')
+			{
+				location.assign("#12");
+				location.reload(true);
+			}
+			else if(symbol == 'X')
+			{
+				location.assign("#11");
+				location.reload(true);
+			}
 		}
-	}
-}
-
-function playAgain(){
-	y=confirm("PLAY AGAIN?");
-	if(y==true){
-		alert("OKAY! ^^/>");
-		location.reload(true);
-	}else{
-		alert("BYE BYE!");
-		location.reload(true);
 	}
 }
