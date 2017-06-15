@@ -1,17 +1,10 @@
-# Hello World
-> A [Bespoke.js](http://markdalgleish.com/projects/bespoke.js) presentation, built with [generator-bespoke](https://github.com/markdalgleish/generator-bespoke)
+# Presentasi
+SCRUM Master 1 = Howard => 2 Juni 2017 - 5 Juni 2017
 
-## View slides locally
+SCRUM Master 2 = Jeffry => 6 Juni 2017 - 8 Juni 2017
 
-First, ensure you have the following installed:
+SCRUM Master 3 = Yuni => 9 Juni 2017 - 11 Juni 2017
 
-1. [Node.js](http://nodejs.org)
-2. [Bower](http://bower.io): `$ npm install -g bower`
-3. [Gulp](http://gulpjs.com): `$ npm install -g gulp`
+SCRUM Master 4 = Ian => 12 Juni 2017 - 15 Juni 2017
 
-Then, install dependencies and run the preview server:
-
-```bash
-$ npm install && bower install
-$ gulp serve
-```
+## Tic Tac Toe
